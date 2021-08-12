@@ -1,0 +1,20 @@
+USE master;
+
+CREATE DATABASE MyPersonalDB;
+
+USE MyPersonalDB;
+
+CREATE TABLE AccountManger(idAccount INT PRIMARY KEY IDENTITY(1,1),
+		NameSite VARCHAR(30), loginUser VARCHAR(30), passwordAccount VARCHAR(20), 
+		AdditionalInfo VARCHAR(200), url VARCHAR(30));
+
+CREATE TABLE Notes(idNote INT PRIMARY KEY IDENTITY(1,1),
+		NoteName VARCHAR(30), noteBody VARCHAR(1500), noteDate DATE);
+
+CREATE TABLE Peaple(idPeaple INT PRIMARY KEY IDENTITY(1,1),
+		firstName VARCHAR(20), lastName VARCHAR(20), Email VARCHAR(40), 
+		phone VARCHAR(20), Addres VARCHAR(30));
+
+
+CREATE TABLE Websites(idSite INT PRIMARY KEY IDENTITY(1,1),
+		siteName VARCHAR(30), siteUrl VARCHAR(40), discription VARCHAR(100));

@@ -1,0 +1,19 @@
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\bin\Release\My Database Manager.exe.config
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\bin\Release\My Database Manager.exe
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\bin\Release\My Database Manager.pdb
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\bin\Release\My Database Manager.xml
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.AccountManager.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.AddingPeaple.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.DisplayInfoAccount.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.DisplayingPeaple.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.Form1.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.Resources.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.WebsiteManager.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My Database Manager.vbproj.GenerateResource.Cache
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My Database Manager.exe
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My Database Manager.xml
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My Database Manager.pdb
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My Database Manager.vbprojResolveAssemblyReference.cache
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.DisplayNote.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.Note.resources
+D:\My Applications\MY PROGRAMMES\VB\WINDOWS FORMS\My Database Manager\My Database Manager\obj\Release\My_Database_Manager.WebsiteDisplayInfo.resources

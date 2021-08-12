@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="My_Database_Manager.AccountManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.AddingPeaple" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIFCAQMAAAAACBAAgCAAAAQAABBAAAAABIAAA=</HashCode>
+      <FileName>AddingPeaple.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.AddNote" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgECAAAAAAAACBAAgCAAAQQBAAAAAAAAAAEAA=</HashCode>
+      <FileName>AddNote.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.DisplayingPeaple" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAABECAAQAGAAACBAABCgAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DisplayingPeaple.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.Form1" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAECIAAAAAEACEwDgCgEAAcB4BBEAAAAAAAAA=</HashCode>
+      <FileName>Form1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.MyPersonalDBDataSet" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAQwAAAAJABAAAQAAAAAgCQBgAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.NoteMemory" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgAAAACIAAIAAAAGBABgCAAQAYAABAAAAAAgACIA=</HashCode>
+      <FileName>NoteMemory.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.WebsiteManager" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAgECIAAAAAAACBABgiAAASIACwAAAAAABAEAA=</HashCode>
+      <FileName>WebsiteManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.My.MyApplication" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.My.MySettings" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQACBAAIAAABAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.MyPersonalDBDataSetTableAdapters.NotesTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="My_Database_Manager.MyPersonalDBDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAQCgAAAAAQAAAAQBAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="My_Database_Manager.My.MySettingsProperty" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="My_Database_Manager.My.Resources.Resources" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
