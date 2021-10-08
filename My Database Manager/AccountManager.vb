@@ -3,28 +3,32 @@
 Public Class AccountManager
 
     Dim connection As New SqlConnection("Data Source=DESKTOP-SE47S40 ; Initial Catalog = MyPersonalDB; Integrated Security =SSPI;")
-    Dim selectQuery As New SqlCommand("Select * From AccountManger;", connection)
-    Dim insertQuery As New SqlCommand("INSERT INTO AccountManger VALUES(@name, @login,@password, @additionalInfo, @url);", connection)
 
     Sub sqlInsertData(url As String, Name As String, login As String, password As String, additionalinfo As String)
+
+        Dim insertQuery As New SqlCommand("INSERT INTO AccountManger VALUES(@name, @login,@password, @additionalInfo, @url);", connection)
+
         Try
             connection.Open()
             Try
-                insertQuery.Parameters.AddWithValue("@name", Name)
-                insertQuery.Parameters.AddWithValue("@login", login)
-                insertQuery.Parameters.AddWithValue("@password", password)
-                insertQuery.Parameters.AddWithValue("@additionalInfo", additionalinfo)
-                insertQuery.Parameters.AddWithValue("@url", url)
+                If Name.Length = 0 Then
+                    MsgBox("You Must Provide A Name", MsgBoxStyle.Critical, "Missed Name")
+                Else
+                    insertQuery.Parameters.AddWithValue("@name", Name)
+                    insertQuery.Parameters.AddWithValue("@login", login)
+                    insertQuery.Parameters.AddWithValue("@password", password)
+                    insertQuery.Parameters.AddWithValue("@additionalInfo", additionalinfo)
+                    insertQuery.Parameters.AddWithValue("@url", url)
 
-                insertQuery.ExecuteNonQuery()
-                MsgBox("Item Registred Saccefully!", MsgBoxStyle.Information, "Sacces")
+                    insertQuery.ExecuteNonQuery()
+                    MsgBox("Item Registred Saccefully!", MsgBoxStyle.Information, "Sacces")
 
-                nameText.Text = ""
-                urlText.Text = ""
-                loginText.Text = ""
-                passwordText.Text = ""
-                additInfoText.Text = ""
-
+                    nameText.Text = ""
+                    urlText.Text = ""
+                    loginText.Text = ""
+                    passwordText.Text = ""
+                    additInfoText.Text = ""
+                End If
             Catch ex As Exception
                 MsgBox("Something Went Wrong", MsgBoxStyle.Exclamation, "Inknown error")
                 'MsgBox(ex.Message)
@@ -38,6 +42,7 @@ Public Class AccountManager
 
 
     Sub SqlReader()
+        Dim selectQuery As New SqlCommand("Select * From AccountManger;", connection)
         Try
             connection.Open()
             Try

@@ -22,6 +22,7 @@ Partial Class WebsiteManager
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WebsiteManager))
         Me.dataDisplayer = New System.Windows.Forms.CheckedListBox()
         Me.websiteName = New System.Windows.Forms.TextBox()
         Me.websiteUrl = New System.Windows.Forms.TextBox()
@@ -146,6 +147,7 @@ Partial Class WebsiteManager
         Me.Controls.Add(Me.websiteUrl)
         Me.Controls.Add(Me.websiteName)
         Me.Controls.Add(Me.dataDisplayer)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(728, 386)
         Me.MinimumSize = New System.Drawing.Size(728, 386)
         Me.Name = "WebsiteManager"

@@ -22,6 +22,7 @@ Partial Class WebsiteDisplayInfo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WebsiteDisplayInfo))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.websiteBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -136,6 +137,7 @@ Partial Class WebsiteDisplayInfo
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(596, 357)
         Me.MinimumSize = New System.Drawing.Size(596, 357)
         Me.Name = "WebsiteDisplayInfo"

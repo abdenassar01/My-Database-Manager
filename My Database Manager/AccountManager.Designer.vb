@@ -22,6 +22,7 @@ Partial Class AccountManager
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AccountManager))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.RememberBtn = New System.Windows.Forms.Button()
@@ -139,7 +140,7 @@ Partial Class AccountManager
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(25, 108)
+        Me.Label6.Location = New System.Drawing.Point(25, 70)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 23)
         Me.Label6.TabIndex = 3
@@ -150,7 +151,7 @@ Partial Class AccountManager
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(25, 70)
+        Me.Label1.Location = New System.Drawing.Point(25, 110)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(146, 23)
         Me.Label1.TabIndex = 3
@@ -160,7 +161,7 @@ Partial Class AccountManager
         '
         Me.urlText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.urlText.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.urlText.Location = New System.Drawing.Point(191, 70)
+        Me.urlText.Location = New System.Drawing.Point(191, 110)
         Me.urlText.Name = "urlText"
         Me.urlText.Size = New System.Drawing.Size(268, 24)
         Me.urlText.TabIndex = 0
@@ -169,7 +170,7 @@ Partial Class AccountManager
         '
         Me.nameText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.nameText.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nameText.Location = New System.Drawing.Point(191, 108)
+        Me.nameText.Location = New System.Drawing.Point(191, 70)
         Me.nameText.MaxLength = 15
         Me.nameText.Name = "nameText"
         Me.nameText.Size = New System.Drawing.Size(268, 24)
@@ -224,6 +225,9 @@ Partial Class AccountManager
         Me.ClientSize = New System.Drawing.Size(702, 411)
         Me.Controls.Add(Me.WebsitesName)
         Me.Controls.Add(Me.Panel2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(718, 450)
         Me.Name = "AccountManager"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Account Manager"

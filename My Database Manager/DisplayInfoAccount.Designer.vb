@@ -22,7 +22,10 @@ Partial Class DisplayInfoAccount
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DisplayInfoAccount))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.delete = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -36,15 +39,20 @@ Partial Class DisplayInfoAccount
         Me.loginBox = New System.Windows.Forms.TextBox()
         Me.urlBox = New System.Windows.Forms.TextBox()
         Me.nameBox = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.delete)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Label4)
@@ -65,6 +73,33 @@ Partial Class DisplayInfoAccount
         Me.Panel1.Size = New System.Drawing.Size(678, 407)
         Me.Panel1.TabIndex = 0
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Red
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(611, 182)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(33, 24)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "<>"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'delete
+        '
+        Me.delete.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.delete.Font = New System.Drawing.Font("Verdana", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.delete.ForeColor = System.Drawing.Color.DimGray
+        Me.delete.Location = New System.Drawing.Point(278, 356)
+        Me.delete.Name = "delete"
+        Me.delete.Size = New System.Drawing.Size(168, 39)
+        Me.delete.TabIndex = 3
+        Me.delete.Text = "Delete"
+        Me.delete.UseVisualStyleBackColor = False
+        '
         'Button1
         '
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
@@ -81,6 +116,7 @@ Partial Class DisplayInfoAccount
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
@@ -204,18 +240,25 @@ Partial Class DisplayInfoAccount
         Me.nameBox.Size = New System.Drawing.Size(365, 24)
         Me.nameBox.TabIndex = 0
         '
-        'Button2
+        'PictureBox1
         '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(611, 182)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(33, 24)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "<>"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 42)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 52)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(30, 29)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
         '
         'DisplayInfoAccount
         '
@@ -224,6 +267,7 @@ Partial Class DisplayInfoAccount
         Me.ClientSize = New System.Drawing.Size(678, 407)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DisplayInfoAccount"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DisplayInfoAccount"
@@ -231,6 +275,8 @@ Partial Class DisplayInfoAccount
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -249,4 +295,7 @@ Partial Class DisplayInfoAccount
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents delete As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

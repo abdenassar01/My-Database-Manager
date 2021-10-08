@@ -73,4 +73,5 @@ Public Class DisplayNote
         Me.Close()
         Note.Show()
     End Sub
+
 End Class
