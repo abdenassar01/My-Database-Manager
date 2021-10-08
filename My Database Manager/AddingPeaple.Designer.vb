@@ -23,6 +23,7 @@ Partial Class AddingPeaple
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -36,7 +37,6 @@ Partial Class AddingPeaple
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -50,6 +50,16 @@ Partial Class AddingPeaple
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(585, 30)
         Me.Panel1.TabIndex = 0
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(106, 3)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(335, 23)
+        Me.Label7.TabIndex = 11
+        Me.Label7.Text = "Add New Peaple To Your Liste"
         '
         'Label1
         '
@@ -205,16 +215,6 @@ Partial Class AddingPeaple
         Me.Label2.Size = New System.Drawing.Size(97, 18)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "FirstName"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(106, 3)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(335, 23)
-        Me.Label7.TabIndex = 11
-        Me.Label7.Text = "Add New Peaple To Your Liste"
         '
         'AddingPeaple
         '

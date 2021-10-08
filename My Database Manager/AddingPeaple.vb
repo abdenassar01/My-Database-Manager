@@ -2,7 +2,6 @@
 
 Public Class AddingPeaple
     Dim connection As New SqlConnection("Data Source=DESKTOP-SE47S40 ; Initial Catalog = MyPersonalDB; Integrated Security =SSPI;")
-    Dim sqlInsertQuery As New SqlCommand("Insert into peaple(FirstName, lastName, Email, phone, Adress) Values(@firstName, @lastName, @email, @phone, @adress);", connection)
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         Me.Close()
     End Sub
@@ -13,6 +12,8 @@ Public Class AddingPeaple
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim sqlInsertQuery As New SqlCommand("Insert into peaple(FirstName, lastName, Email, phone, Adress) Values(@firstName, @lastName, @email, @phone, @adress);", connection)
+
         sqlInsertQuery.Parameters.AddWithValue("@firstName", firstnameBox.Text)
         sqlInsertQuery.Parameters.AddWithValue("@lastName", lastNameBox.Text)
         sqlInsertQuery.Parameters.AddWithValue("@email", EmailBox.Text)
@@ -28,11 +29,14 @@ Public Class AddingPeaple
                 addresBox.Text = ""
                 phoneBox.Text = ""
             Catch ex As Exception
+                'MsgBox(ex.Message)
                 MsgBox("Someting Went Wrong", MsgBoxStyle.Exclamation, "Error")
             End Try
         Catch ex As Exception
+            'MsgBox(ex.Message)
             MsgBox("Connection To Database Fields", MsgBoxStyle.Exclamation, "Data Error")
+        Finally
+            connection.Close()
         End Try
     End Sub
-
 End Class

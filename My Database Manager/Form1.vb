@@ -9,7 +9,7 @@
     'End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles checkBtn.Click
-        If TextBoxValidation.Text <> "password" Then
+        If TextBoxValidation.Text <> "27701" Then
             MsgBox("Your Password Is Wrong Try Again!", MsgBoxStyle.Exclamation, "Password Wrong")
             confirm = False
         Else
@@ -65,5 +65,4 @@
         End If
         
     End Sub
-
 End Class

@@ -26,8 +26,8 @@ Public Class AccountManager
                 additInfoText.Text = ""
 
             Catch ex As Exception
-                'MsgBox("Something Went Wrong", MsgBoxStyle.Exclamation, "Inknown error")
-                MsgBox(ex.Message)
+                MsgBox("Something Went Wrong", MsgBoxStyle.Exclamation, "Inknown error")
+                'MsgBox(ex.Message)
             End Try
         Catch ex As Exception
             MsgBox("Connection To Database Fields!", MsgBoxStyle.Exclamation, "Connetion error")
