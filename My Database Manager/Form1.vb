@@ -65,4 +65,8 @@
         End If
         
     End Sub
+
+    Private Sub minimize_Click(sender As Object, e As EventArgs) Handles minimize.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class
