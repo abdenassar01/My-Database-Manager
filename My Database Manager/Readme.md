@@ -1,8 +1,8 @@
 ﻿
 # This is an application build using vb.net To manage a personal database 
-# code is = password(You can Change it it's manchened only once)
-# 
-# This application Gives you the ability to add peaple to a table in a database that holds thier names, emails, phone and adresses
+# code is = password (You can Change it it's manchened only once)
+
+/ This application Gives you the ability to add peaple to a table in a database that holds thier names, emails, phone and adresses
 # which gives you a way of remembring them in case you wanna email them with a service you provide in the future 
 # it's hepes you keep track of your clients...
 # the Second Feature is the ability to write note and they well be stored at a table inside your database 
