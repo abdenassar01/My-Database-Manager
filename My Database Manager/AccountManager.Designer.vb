@@ -43,7 +43,7 @@ Partial Class AccountManager
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Panel2.BackColor = System.Drawing.Color.Blue
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.RememberBtn)
         Me.Panel2.Controls.Add(Me.Label4)
@@ -64,7 +64,7 @@ Partial Class AccountManager
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Red
+        Me.Button1.BackColor = System.Drawing.Color.DarkMagenta
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(421, 201)
@@ -76,14 +76,14 @@ Partial Class AccountManager
         '
         'RememberBtn
         '
-        Me.RememberBtn.BackColor = System.Drawing.Color.Yellow
+        Me.RememberBtn.BackColor = System.Drawing.Color.DeepPink
         Me.RememberBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.RememberBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.RememberBtn.FlatAppearance.BorderSize = 0
-        Me.RememberBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime
+        Me.RememberBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo
         Me.RememberBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RememberBtn.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RememberBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.RememberBtn.ForeColor = System.Drawing.Color.White
         Me.RememberBtn.Location = New System.Drawing.Point(287, 357)
         Me.RememberBtn.Name = "RememberBtn"
         Me.RememberBtn.Size = New System.Drawing.Size(218, 48)
@@ -95,7 +95,7 @@ Partial Class AccountManager
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Verdana", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(48, 10)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(428, 29)
@@ -106,7 +106,7 @@ Partial Class AccountManager
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(25, 252)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(160, 23)
@@ -117,7 +117,7 @@ Partial Class AccountManager
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(25, 201)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(113, 23)
@@ -128,7 +128,7 @@ Partial Class AccountManager
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(25, 153)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 23)
@@ -139,7 +139,7 @@ Partial Class AccountManager
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(25, 70)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 23)
@@ -150,7 +150,7 @@ Partial Class AccountManager
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(25, 110)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(146, 23)
@@ -207,7 +207,7 @@ Partial Class AccountManager
         '
         'WebsitesName
         '
-        Me.WebsitesName.BackColor = System.Drawing.Color.Teal
+        Me.WebsitesName.BackColor = System.Drawing.Color.DeepPink
         Me.WebsitesName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.WebsitesName.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WebsitesName.ForeColor = System.Drawing.Color.White

@@ -36,9 +36,10 @@ Partial Class WebsiteManager
         '
         'dataDisplayer
         '
-        Me.dataDisplayer.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.dataDisplayer.BackColor = System.Drawing.Color.DeepPink
         Me.dataDisplayer.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dataDisplayer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dataDisplayer.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dataDisplayer.ForeColor = System.Drawing.Color.White
         Me.dataDisplayer.FormattingEnabled = True
         Me.dataDisplayer.Location = New System.Drawing.Point(0, 0)
         Me.dataDisplayer.Name = "dataDisplayer"
@@ -48,7 +49,7 @@ Partial Class WebsiteManager
         'websiteName
         '
         Me.websiteName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.websiteName.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.websiteName.Font = New System.Drawing.Font("Consolas", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.websiteName.Location = New System.Drawing.Point(350, 51)
         Me.websiteName.Name = "websiteName"
         Me.websiteName.Size = New System.Drawing.Size(350, 20)
@@ -57,7 +58,7 @@ Partial Class WebsiteManager
         'websiteUrl
         '
         Me.websiteUrl.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.websiteUrl.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.websiteUrl.Font = New System.Drawing.Font("Consolas", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.websiteUrl.Location = New System.Drawing.Point(350, 79)
         Me.websiteUrl.Name = "websiteUrl"
         Me.websiteUrl.Size = New System.Drawing.Size(350, 20)
@@ -66,7 +67,7 @@ Partial Class WebsiteManager
         'websiteDisc
         '
         Me.websiteDisc.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.websiteDisc.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.websiteDisc.Font = New System.Drawing.Font("Consolas", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.websiteDisc.Location = New System.Drawing.Point(350, 106)
         Me.websiteDisc.Name = "websiteDisc"
         Me.websiteDisc.Size = New System.Drawing.Size(350, 180)
@@ -75,11 +76,11 @@ Partial Class WebsiteManager
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Button1.BackColor = System.Drawing.Color.DeepPink
         Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Olive
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(180, 296)
         Me.Button1.Name = "Button1"
@@ -91,52 +92,52 @@ Partial Class WebsiteManager
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(214, 52)
+        Me.Label1.Location = New System.Drawing.Point(192, 52)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 18)
+        Me.Label1.Size = New System.Drawing.Size(154, 24)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Name           : "
+        Me.Label1.Text = "Name       :"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(214, 79)
+        Me.Label2.Location = New System.Drawing.Point(192, 79)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(119, 18)
+        Me.Label2.Size = New System.Drawing.Size(154, 24)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "URL              :"
+        Me.Label2.Text = "URL        :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Consolas", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(214, 106)
+        Me.Label3.Location = New System.Drawing.Point(192, 106)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(115, 18)
+        Me.Label3.Size = New System.Drawing.Size(154, 24)
         Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Discription  :"
+        Me.Label3.Text = "Discription:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Verdana", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Consolas", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(261, 6)
+        Me.Label4.Location = New System.Drawing.Point(292, 9)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(368, 29)
+        Me.Label4.Size = New System.Drawing.Size(270, 32)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Try To Use A Unique Name"
+        Me.Label4.Text = "Use A Unique Name"
         '
         'WebsiteManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.BackColor = System.Drawing.Color.MediumBlue
         Me.ClientSize = New System.Drawing.Size(712, 347)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)

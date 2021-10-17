@@ -36,11 +36,11 @@ Partial Class WebsiteDisplayInfo
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(23, 15)
+        Me.Label1.Location = New System.Drawing.Point(12, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(174, 23)
+        Me.Label1.Size = New System.Drawing.Size(166, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Website Name:"
         '
@@ -57,13 +57,13 @@ Partial Class WebsiteDisplayInfo
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(23, 57)
+        Me.Label2.Location = New System.Drawing.Point(12, 49)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(175, 23)
+        Me.Label2.Size = New System.Drawing.Size(166, 24)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Website URL   :"
+        Me.Label2.Text = "Website URL :"
         '
         'urlBox
         '
@@ -78,13 +78,13 @@ Partial Class WebsiteDisplayInfo
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(23, 96)
+        Me.Label3.Location = New System.Drawing.Point(12, 88)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(177, 23)
+        Me.Label3.Size = New System.Drawing.Size(178, 24)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Discription     : "
+        Me.Label3.Text = "Discription : "
         '
         'DiscBox
         '
@@ -99,35 +99,39 @@ Partial Class WebsiteDisplayInfo
         '
         'Button1
         '
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Button1.BackColor = System.Drawing.Color.DeepPink
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Verdana", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(349, 277)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(98, 29)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Delete"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Button2.BackColor = System.Drawing.Color.DeepPink
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Verdana", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(463, 277)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 29)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Back"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'WebsiteDisplayInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackColor = System.Drawing.Color.Blue
         Me.ClientSize = New System.Drawing.Size(580, 318)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)

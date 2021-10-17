@@ -28,6 +28,7 @@ Partial Class DisplayInfoAccount
         Me.delete = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -39,18 +40,14 @@ Partial Class DisplayInfoAccount
         Me.loginBox = New System.Windows.Forms.TextBox()
         Me.urlBox = New System.Windows.Forms.TextBox()
         Me.nameBox = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.BackColor = System.Drawing.Color.MediumBlue
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.delete)
         Me.Panel1.Controls.Add(Me.Button1)
@@ -88,11 +85,12 @@ Partial Class DisplayInfoAccount
         '
         'delete
         '
-        Me.delete.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.delete.BackColor = System.Drawing.Color.DeepPink
+        Me.delete.FlatAppearance.BorderSize = 0
+        Me.delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo
         Me.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.delete.Font = New System.Drawing.Font("Verdana", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.delete.ForeColor = System.Drawing.Color.DimGray
+        Me.delete.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.delete.ForeColor = System.Drawing.Color.White
         Me.delete.Location = New System.Drawing.Point(278, 356)
         Me.delete.Name = "delete"
         Me.delete.Size = New System.Drawing.Size(168, 39)
@@ -102,20 +100,22 @@ Partial Class DisplayInfoAccount
         '
         'Button1
         '
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.Button1.BackColor = System.Drawing.Color.DeepPink
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Verdana", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.DimGray
+        Me.Button1.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(476, 356)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(168, 39)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Go Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.Panel2.BackColor = System.Drawing.Color.DeepPink
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
@@ -123,10 +123,21 @@ Partial Class DisplayInfoAccount
         Me.Panel2.Size = New System.Drawing.Size(678, 36)
         Me.Panel2.TabIndex = 2
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(30, 29)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(640, 2)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(36, 32)
@@ -136,50 +147,60 @@ Partial Class DisplayInfoAccount
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(71, 189)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(134, 23)
+        Me.Label4.Size = New System.Drawing.Size(120, 22)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "My Password"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(71, 226)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(150, 23)
+        Me.Label5.Size = New System.Drawing.Size(160, 22)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Additional Info"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(71, 152)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(96, 23)
+        Me.Label3.Size = New System.Drawing.Size(90, 22)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "My Login"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(71, 115)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(133, 23)
+        Me.Label2.Size = New System.Drawing.Size(120, 22)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "WebSite URL"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(71, 78)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(149, 23)
+        Me.Label1.Size = New System.Drawing.Size(130, 22)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "WebSite Name"
         '
@@ -240,26 +261,6 @@ Partial Class DisplayInfoAccount
         Me.nameBox.Size = New System.Drawing.Size(365, 24)
         Me.nameBox.TabIndex = 0
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 42)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(52, 52)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(30, 29)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 5
-        Me.PictureBox2.TabStop = False
-        '
         'DisplayInfoAccount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -275,7 +276,6 @@ Partial Class DisplayInfoAccount
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -296,6 +296,5 @@ Partial Class DisplayInfoAccount
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents delete As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

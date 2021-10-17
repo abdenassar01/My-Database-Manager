@@ -1,12 +1,10 @@
 ﻿Public Class Form1
     Dim confirm As Boolean = False
 
+   
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         Me.Close()
     End Sub
-
-    'Private Sub meLoad(sender As Object, e As EventArgs) Handles Me.Load
-    'End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles checkBtn.Click
         If TextBoxValidation.Text <> "27701" Then
@@ -37,7 +35,7 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        
+
         If confirm = False Then
             MsgBox("You are not  allowed to see that informations, you need to log in first", MsgBoxStyle.Exclamation, "Log in error")
         Else
@@ -63,7 +61,7 @@
             Me.Hide()
             AccountManager.Show()
         End If
-        
+
     End Sub
 
     Private Sub minimize_Click(sender As Object, e As EventArgs) Handles minimize.Click

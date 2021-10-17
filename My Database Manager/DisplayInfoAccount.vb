@@ -40,7 +40,7 @@ Public Class DisplayInfoAccount
         displayInfo()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, delete.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles delete.Click
         'Write the command to delete the priticuler item from database
         Dim deleteQuery As New SqlCommand("delete From AccountManger Where NameSite = @name;", connection)
 
@@ -61,7 +61,7 @@ Public Class DisplayInfoAccount
                 MsgBox("Something Went Wrong", MsgBoxStyle.Exclamation, "Inknown error")
             End Try
         Catch ex As Exception
-           MsgBox("Connection To Database Fields!", MsgBoxStyle.Exclamation, "Connetion error")
+            MsgBox("Connection To Database Fields!", MsgBoxStyle.Exclamation, "Connetion error")
         Finally
             connection.Close()
         End Try
@@ -75,4 +75,9 @@ Public Class DisplayInfoAccount
         End If
     End Sub
 
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        AccountManager.Show()
+
+    End Sub
 End Class

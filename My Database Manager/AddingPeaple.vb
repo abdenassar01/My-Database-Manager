@@ -12,31 +12,36 @@ Public Class AddingPeaple
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim sqlInsertQuery As New SqlCommand("Insert into peaple(FirstName, lastName, Email, phone, Adress) Values(@firstName, @lastName, @email, @phone, @adress);", connection)
 
-        sqlInsertQuery.Parameters.AddWithValue("@firstName", firstnameBox.Text)
-        sqlInsertQuery.Parameters.AddWithValue("@lastName", lastNameBox.Text)
-        sqlInsertQuery.Parameters.AddWithValue("@email", EmailBox.Text)
-        sqlInsertQuery.Parameters.AddWithValue("@phone", phoneBox.Text)
-        sqlInsertQuery.Parameters.AddWithValue("@adress", addresBox.Text)
-        Try
-            connection.Open()
+        If (firstnameBox.Text.Length < 3) Then
+            MsgBox("You Must Provide A Name", MsgBoxStyle.Exclamation, "Missing Name")
+            else
+            Dim sqlInsertQuery As New SqlCommand("Insert into peaple(FirstName, lastName, Email, phone, Adress) Values(@firstName, @lastName, @email, @phone, @adress);", connection)
+
+            sqlInsertQuery.Parameters.AddWithValue("@firstName", firstnameBox.Text)
+            sqlInsertQuery.Parameters.AddWithValue("@lastName", lastNameBox.Text)
+            sqlInsertQuery.Parameters.AddWithValue("@email", EmailBox.Text)
+            sqlInsertQuery.Parameters.AddWithValue("@phone", phoneBox.Text)
+            sqlInsertQuery.Parameters.AddWithValue("@adress", addresBox.Text)
             Try
-                sqlInsertQuery.ExecuteNonQuery()
-                firstnameBox.Text = ""
-                lastNameBox.Text = ""
-                EmailBox.Text = ""
-                addresBox.Text = ""
-                phoneBox.Text = ""
+                connection.Open()
+                Try
+                    sqlInsertQuery.ExecuteNonQuery()
+                    firstnameBox.Text = ""
+                    lastNameBox.Text = ""
+                    EmailBox.Text = ""
+                    addresBox.Text = ""
+                    phoneBox.Text = ""
+                Catch ex As Exception
+                    'MsgBox(ex.Message)
+                    MsgBox("Someting Went Wrong", MsgBoxStyle.Exclamation, "Error")
+                End Try
             Catch ex As Exception
                 'MsgBox(ex.Message)
-                MsgBox("Someting Went Wrong", MsgBoxStyle.Exclamation, "Error")
+                MsgBox("Connection To Database Fields", MsgBoxStyle.Exclamation, "Data Error")
+            Finally
+                connection.Close()
             End Try
-        Catch ex As Exception
-            'MsgBox(ex.Message)
-            MsgBox("Connection To Database Fields", MsgBoxStyle.Exclamation, "Data Error")
-        Finally
-            connection.Close()
-        End Try
+        End If
     End Sub
 End Class

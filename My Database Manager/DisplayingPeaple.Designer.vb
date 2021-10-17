@@ -39,7 +39,7 @@ Partial Class DisplayingPeaple
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkCyan
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(185, Byte), Integer))
         Me.Panel1.Controls.Add(Me.adressText)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.phoneText)
@@ -58,7 +58,7 @@ Partial Class DisplayingPeaple
         '
         'adressText
         '
-        Me.adressText.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.adressText.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.adressText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.adressText.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.adressText.ForeColor = System.Drawing.Color.Black
@@ -85,7 +85,7 @@ Partial Class DisplayingPeaple
         '
         'phoneText
         '
-        Me.phoneText.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.phoneText.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.phoneText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.phoneText.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.phoneText.ForeColor = System.Drawing.Color.Black
@@ -111,7 +111,7 @@ Partial Class DisplayingPeaple
         '
         'emailText
         '
-        Me.emailText.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.emailText.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.emailText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.emailText.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.emailText.ForeColor = System.Drawing.Color.Black
@@ -138,7 +138,7 @@ Partial Class DisplayingPeaple
         '
         'lastNameText
         '
-        Me.lastNameText.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lastNameText.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.lastNameText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lastNameText.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastNameText.ForeColor = System.Drawing.Color.Black
@@ -164,7 +164,7 @@ Partial Class DisplayingPeaple
         '
         'firstNameText
         '
-        Me.firstNameText.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.firstNameText.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.firstNameText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.firstNameText.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstNameText.ForeColor = System.Drawing.Color.Black

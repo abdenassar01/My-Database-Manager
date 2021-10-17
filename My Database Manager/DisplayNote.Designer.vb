@@ -38,10 +38,11 @@ Partial Class DisplayNote
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.DimGray
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(69, 39)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(130, 23)
+        Me.Label1.Size = New System.Drawing.Size(118, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Note Name"
         '
@@ -58,10 +59,11 @@ Partial Class DisplayNote
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.Color.DimGray
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(69, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(120, 23)
+        Me.Label2.Size = New System.Drawing.Size(118, 24)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Note Body"
         '
@@ -87,16 +89,19 @@ Partial Class DisplayNote
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Fuchsia
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Gray
+        Me.Button1.Font = New System.Drawing.Font("Consolas", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(533, 355)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(170, 35)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Go Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -109,16 +114,19 @@ Partial Class DisplayNote
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.Fuchsia
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Gray
+        Me.Button2.Font = New System.Drawing.Font("Consolas", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(338, 357)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(170, 35)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Delete Note"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -135,7 +143,7 @@ Partial Class DisplayNote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.BackColor = System.Drawing.Color.MediumBlue
         Me.ClientSize = New System.Drawing.Size(715, 402)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
@@ -147,6 +155,7 @@ Partial Class DisplayNote
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)

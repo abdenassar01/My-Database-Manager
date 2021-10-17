@@ -24,44 +24,44 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.minimize = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.LabelWelcoming = New System.Windows.Forms.Label()
         Me.TextBoxValidation = New System.Windows.Forms.TextBox()
         Me.checkBtn = New System.Windows.Forms.Button()
         Me.welcomeLabel = New System.Windows.Forms.Label()
-        Me.minimize = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel8.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.MainPanel.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -71,6 +71,12 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Label1)
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
+        '
+        'minimize
+        '
+        resources.ApplyResources(Me.minimize, "minimize")
+        Me.minimize.ForeColor = System.Drawing.Color.White
+        Me.minimize.Name = "minimize"
         '
         'Label1
         '
@@ -113,19 +119,25 @@ Partial Class Form1
         Me.Panel8.Controls.Add(Me.Button5)
         Me.Panel8.Name = "Panel8"
         '
+        'PictureBox5
+        '
+        resources.ApplyResources(Me.PictureBox5, "PictureBox5")
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.TabStop = False
+        '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.Transparent
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Aqua
-        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
+        Me.Button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue
+        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue
+        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         resources.ApplyResources(Me.Button5, "Button5")
         Me.Button5.ForeColor = System.Drawing.Color.White
         Me.Button5.Name = "Button5"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Panel7
         '
@@ -135,19 +147,25 @@ Partial Class Form1
         resources.ApplyResources(Me.Panel7, "Panel7")
         Me.Panel7.Name = "Panel7"
         '
+        'PictureBox4
+        '
+        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.TabStop = False
+        '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Transparent
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Aqua
-        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
+        Me.Button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue
+        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         resources.ApplyResources(Me.Button4, "Button4")
         Me.Button4.ForeColor = System.Drawing.Color.White
         Me.Button4.Name = "Button4"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Panel6
         '
@@ -157,19 +175,25 @@ Partial Class Form1
         resources.ApplyResources(Me.Panel6, "Panel6")
         Me.Panel6.Name = "Panel6"
         '
+        'PictureBox3
+        '
+        resources.ApplyResources(Me.PictureBox3, "PictureBox3")
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.TabStop = False
+        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Transparent
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Aqua
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
+        Me.Button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         resources.ApplyResources(Me.Button3, "Button3")
         Me.Button3.ForeColor = System.Drawing.Color.White
         Me.Button3.Name = "Button3"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Panel5
         '
@@ -179,19 +203,25 @@ Partial Class Form1
         resources.ApplyResources(Me.Panel5, "Panel5")
         Me.Panel5.Name = "Panel5"
         '
+        'PictureBox2
+        '
+        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.TabStop = False
+        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Aqua
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
+        Me.Button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Name = "Button2"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Panel4
         '
@@ -201,19 +231,25 @@ Partial Class Form1
         resources.ApplyResources(Me.Panel4, "Panel4")
         Me.Panel4.Name = "Panel4"
         '
+        'PictureBox1
+        '
+        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.TabStop = False
+        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Aqua
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
+        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         resources.ApplyResources(Me.Button1, "Button1")
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Name = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'MainPanel
         '
@@ -242,10 +278,10 @@ Partial Class Form1
         '
         Me.checkBtn.BackColor = System.Drawing.Color.DeepPink
         Me.checkBtn.CausesValidation = False
-        Me.checkBtn.FlatAppearance.BorderColor = System.Drawing.Color.PaleGreen
+        Me.checkBtn.FlatAppearance.BorderColor = System.Drawing.Color.Blue
         Me.checkBtn.FlatAppearance.BorderSize = 0
-        Me.checkBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Magenta
-        Me.checkBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
+        Me.checkBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue
+        Me.checkBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         resources.ApplyResources(Me.checkBtn, "checkBtn")
         Me.checkBtn.ForeColor = System.Drawing.Color.White
         Me.checkBtn.Name = "checkBtn"
@@ -256,42 +292,6 @@ Partial Class Form1
         resources.ApplyResources(Me.welcomeLabel, "welcomeLabel")
         Me.welcomeLabel.ForeColor = System.Drawing.Color.White
         Me.welcomeLabel.Name = "welcomeLabel"
-        '
-        'minimize
-        '
-        resources.ApplyResources(Me.minimize, "minimize")
-        Me.minimize.ForeColor = System.Drawing.Color.White
-        Me.minimize.Name = "minimize"
-        '
-        'PictureBox2
-        '
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        resources.ApplyResources(Me.PictureBox3, "PictureBox3")
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        resources.ApplyResources(Me.PictureBox5, "PictureBox5")
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox1
-        '
-        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
@@ -309,17 +309,17 @@ Partial Class Form1
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel8.ResumeLayout(False)
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainPanel.ResumeLayout(False)
         Me.MainPanel.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
